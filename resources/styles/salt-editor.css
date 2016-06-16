@@ -1,0 +1,62 @@
+html,body,#main-container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height:100%;
+    width:100%;
+
+    overflow: hidden;
+
+}
+#main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.editor-container {
+    padding: 10px;
+    height:100%;
+
+    /*
+    resize: horizontal;
+    overflow: auto;
+    */
+}
+
+.editor-Xdivider {
+    flex: 0 0 auto;
+    width: 4px;
+    background: inherit;
+    height:100%;
+    cursor: col-resize;
+
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition-property: all 150ms ease-in-out;
+    -o-transition-property: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+.editor-Xdivider:hover,
+.editor-Xdivider:active {
+    width: 12px;
+
+    -webkit-box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    -moz-box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+#sidebar-tree {
+    flex: 0 0 auto;
+    width: 300px;
+    white-space: nowrap;
+    z-index: 999;
+}
+
+#main-editor {
+    flex: 1 1 auto;
+    width: 100%;
+}

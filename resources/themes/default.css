@@ -1,0 +1,16 @@
+/*#main-container { background: #D1CBC9; }*/
+#main-container { background: #2e3436; }
+
+.editor-container {
+    color: #fff;
+}
+
+.editor-Xdivider {
+    background: #ABA19E;
+}
+
+#main-editor {
+    background: #2e3436;
+}
+
+#sidebar-tree { background: #222; }
